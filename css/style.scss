@@ -1,0 +1,382 @@
+$info-screen-pc: "only screen and (max-width :  1320px)";
+$info-tablet-big: "only screen and (max-width : 1160px)";
+$info-tab-only: "only screen and (max-width: 1160px) and (min-width: 800px)";
+$info-tablet: "only screen and (max-width : 800px)";
+$info-phone: "only screen and (max-width : 767px)";
+$info-phone-4: "only screen and (max-width : 320px)";
+@import "mixin";
+
+html, body {
+  min-height: 720px;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media #{$info-phone} {
+    overflow: hidden;
+    min-height: inherit;
+  }
+  font-size:13px;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+}
+
+#fountainG{
+  position:absolute;
+  top:50%;
+  left:45%;
+  @include css3-prefix(transform, translate(-45%,-50%));
+  .fountainG{
+    position:absolute;
+    background-color:rgba(0,0,0,0.78);
+    width:27px;
+    height:27px;
+    animation-name:bounce_fountainG;
+    -o-animation-name:bounce_fountainG;
+    -ms-animation-name:bounce_fountainG;
+    -webkit-animation-name:bounce_fountainG;
+    -moz-animation-name:bounce_fountainG;
+    animation-duration:1.035s;
+    -o-animation-duration:1.035s;
+    -ms-animation-duration:1.035s;
+    -webkit-animation-duration:1.035s;
+    -moz-animation-duration:1.035s;
+    animation-iteration-count:infinite;
+    -o-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+    animation-direction:normal;
+    -o-animation-direction:normal;
+    -ms-animation-direction:normal;
+    -webkit-animation-direction:normal;
+    -moz-animation-direction:normal;
+    transform:scale(.3);
+    -o-transform:scale(.3);
+    -ms-transform:scale(.3);
+    -webkit-transform:scale(.3);
+    -moz-transform:scale(.3);
+    border-radius:18px;
+    -o-border-radius:18px;
+    -ms-border-radius:18px;
+    -webkit-border-radius:18px;
+    -moz-border-radius:18px;
+  }
+
+  #fountainG_1{
+    left:0;
+    animation-delay:0.416s;
+    -o-animation-delay:0.416s;
+    -ms-animation-delay:0.416s;
+    -webkit-animation-delay:0.416s;
+    -moz-animation-delay:0.416s;
+  }
+
+  #fountainG_2{
+    left:28px;
+    animation-delay:0.5225s;
+    -o-animation-delay:0.5225s;
+    -ms-animation-delay:0.5225s;
+    -webkit-animation-delay:0.5225s;
+    -moz-animation-delay:0.5225s;
+  }
+
+  #fountainG_3{
+    left:55px;
+    animation-delay:0.619s;
+    -o-animation-delay:0.619s;
+    -ms-animation-delay:0.619s;
+    -webkit-animation-delay:0.619s;
+    -moz-animation-delay:0.619s;
+  }
+
+  #fountainG_4{
+    left:83px;
+    animation-delay:0.7255s;
+    -o-animation-delay:0.7255s;
+    -ms-animation-delay:0.7255s;
+    -webkit-animation-delay:0.7255s;
+    -moz-animation-delay:0.7255s;
+  }
+
+  #fountainG_5{
+    left:111px;
+    animation-delay:0.832s;
+    -o-animation-delay:0.832s;
+    -ms-animation-delay:0.832s;
+    -webkit-animation-delay:0.832s;
+    -moz-animation-delay:0.832s;
+  }
+
+  #fountainG_6{
+    left:139px;
+    animation-delay:0.9385s;
+    -o-animation-delay:0.9385s;
+    -ms-animation-delay:0.9385s;
+    -webkit-animation-delay:0.9385s;
+    -moz-animation-delay:0.9385s;
+  }
+
+  #fountainG_7{
+    left:166px;
+    animation-delay:1.035s;
+    -o-animation-delay:1.035s;
+    -ms-animation-delay:1.035s;
+    -webkit-animation-delay:1.035s;
+    -moz-animation-delay:1.035s;
+  }
+
+  #fountainG_8{
+    left:194px;
+    animation-delay:1.1415s;
+    -o-animation-delay:1.1415s;
+    -ms-animation-delay:1.1415s;
+    -webkit-animation-delay:1.1415s;
+    -moz-animation-delay:1.1415s;
+  }
+
+}
+//load page
+
+@keyframes bounce_fountainG{
+  0%{
+    transform:scale(1);
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    transform:scale(.3);
+    background-color:rgb(255,255,255);
+  }
+}
+@-o-keyframes bounce_fountainG{
+  0%{
+    -o-transform:scale(1);
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    -o-transform:scale(.3);
+    background-color:rgb(255,255,255);
+  }
+}
+@-ms-keyframes bounce_fountainG{
+  0%{
+    -ms-transform:scale(1);
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    -ms-transform:scale(.3);
+    background-color:rgb(255,255,255);
+  }
+}
+@-webkit-keyframes bounce_fountainG{
+  0%{
+    -webkit-transform:scale(1);
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    -webkit-transform:scale(.3);
+    background-color:rgb(255,255,255);
+  }
+}
+@-moz-keyframes bounce_fountainG{
+  0%{
+    -moz-transform:scale(1);
+    background-color:rgb(0,0,0);
+  }
+
+  100%{
+    -moz-transform:scale(.3);
+    background-color:rgb(255,255,255);
+  }
+}
+// animation load page
+
+@-moz-keyframes spinnow {
+  100% {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes spinnow {
+  100% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+@keyframes spinnow {
+  100% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinnow {
+  100% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinnow {
+  100% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+//animation hover
+
+.wrapper{
+  display:none;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color:#d2c6c6;
+  overflow:hidden;
+
+  .header{
+    color:#ffffff;
+    font-size:1.8rem;
+    padding-top:10px;
+    padding-bottom:50px;
+    .header__about{
+      float:left;
+      padding-right:25px;
+      img{
+        padding-right:8px;
+      }
+      a{
+        color:white;
+        text-decoration:none;
+      }
+    }
+    .header__access{
+      float:right;
+      img{
+        padding-right:5px;
+      }
+    }
+  }
+  //header
+
+  .banner{
+    padding-bottom:65px;
+    position:relative;
+    z-index:1;
+    @include css3-prefix(transform, rotate(-8deg));
+
+    .banner__logo{
+      color:red;
+      font-size:180px;
+      text-align:center;
+      font-weight:bold;
+      line-height:1;
+      margin-bottom:20px;
+      .banner__logo__line{
+        width:120%;
+        margin-left:-10%;
+        height:40px;
+        background-color:red;
+        margin-bottom:5px;
+      }
+      .banner__logo__line-end{
+        width:120%;
+        margin-left:-10%;
+        height:5px;
+        background-color:red;
+      }
+    }
+
+    .banner__date{
+      position:absolute;
+      z-index:9;
+      bottom:32%;
+      left:50%;
+      @include css3-prefix(transform, translateX(-50%));
+    }
+
+    .banner__human-auto{
+      position:absolute;
+      top:0;
+      left:50%;
+      z-index:5;
+      @include css3-prefix(transform, translateX(-50%));
+    }
+  }
+  //banner
+
+  .slider {
+    position: relative;
+    z-index: 9;
+    clear: both;
+    text-align: center;
+    padding: 0 50px 0 50px;
+    ul {
+      li {
+        display: inline-table;
+        padding: 0 40px;
+        position: relative;
+        cursor: pointer;
+        @media #{$info-tablet-big}{
+          padding: 0;
+        }
+        img {
+          @media #{$info-tablet-big}{
+            width: 80%;
+          }
+        }
+        &:hover {
+          .img-hover {
+            display: block;
+            @include css3-prefix(animation, 5s spinnow infinite linear);
+          }
+          .note {
+            display: none;
+          }
+          .text {
+            display: block;
+          }
+        }
+        .note {
+          position: absolute;
+          top: 0;
+        }
+        .img-hover {
+          position: absolute;
+          top: 0;
+          display: none;
+        }
+        .text {
+          color: #ffffff;
+          font-size: 1.7rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          display: none;
+          @include css3-prefix(transform, translate(-50%, -50%));
+        }
+      }
+    }
+  }
+  //slider
+}
